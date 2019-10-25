@@ -1,0 +1,49 @@
+
+ h1 {
+    width: 100%; 
+    font-family: Impact;
+    font-size: 98;
+    color: purple !important;
+    text-align: center;
+    border: 7px solid darkgreen;
+     }
+
+main {
+    background-color: lightsteelblue;
+}
+
+body {
+    background-color: lightpink;
+    }
+
+h2  {
+    color: green;
+    font-size: 82;
+}
+
+/* Changed first letter to red with a bold weight*/
+p::first-letter {
+    color: red;
+    font-weight: bold
+}
+/* Used the hover psuedo class to change the color of the first letter from red to blue when it is hovered over with the curser.*/  
+p:hover::first-letter {
+    color: blue
+}
+h1 {
+    color: darkslategray;
+}
+
+hr {
+    color: blueviolet
+}
+
+span style {
+    color: blue !important;
+}
+
+
+
+        
+
+
