@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dashboard-style.css"/>
+</head>
+    <body>
+    <header>
+        <h1>ToDo Weather and More!</h1>
+    </header>
+    <main>
+        <a id="weather" class="weatherwidget-io" href="https://forecast7.com/en/33d34n102d21/meadow/" data-label_1="MEADOW" data-label_2="WEATHER" data-theme="original" >MEADOW WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+        <!-------Do not change below this line-------><div align="center"><iframe align="center" src="//widget.calendarlabs.com/v1/calendar.php?cid=1001&ver=1.2&uid=6707061343&c=8&l=en&cbg=C3D9FF&cfg=000000&hfg=000000&hfg1=000000&ct=1&cb=1&cbc=2275FF&cf=verdana&cp=&sw=0&hp=t&ib=0&ibc=&i=" width="170" height="155" marginwidth=0 marginheight=0 frameborder=0 scrolling=no allowtransparency='true'>Loading...</iframe><div align="center" style="width:140px;font-size:10px;color:#333;">Calendar Widget by <a href="https://www.calendarlabs.com/" target="_blank" rel="nofollow" style="font-size:10px;text-decoration:none;color:#333;">CalendarLabs</a></div></div><!-------Do not change above this line------->
+        <div id="greeting">
+            <h1>Good morning, Glenda</h1>
+            <h2>12:30 P.M.</h2>
+            <h2>November 3rd, 2019</h2>
+        </div>
+        <div id="ToDo">
+            <h2>ToDo</h2>
+        </div>
+                <div id='calc-contain'>
+            <form name="calculator">
+                <input type="text" name="answer" />
+                  <br>
+                  
+                  <input type="button" value=" % " onclick="calculator.answer.value += '%'" />
+                  <input type="button" value=" OFF " onclick="calculator.answer.value += 'OFF'" />
+                  <input type="button" value=" CE " onclick="calculator.answer.value += 'CE'" />
+                  <input type="button" value=" ON/C " onclick="calculator.answer.value += 'ON/C'" />
+                  </br>
+
+                  <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+                  <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+                  <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+                  <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+                  <br/>
+                  
+                  <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+                  <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+                  <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+                  <input type="button" value=" * " onclick="calculator.answer.value += '*'" />
+                  </br>
+                
+                  <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+                  <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+                  <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+                  <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+                  </br>
+                  
+                  <input type="button" value=" 0 " onclick="calculator.answer.value = '0'" />
+                  <input type="button" value=" . " onclick="calculator.answer.value += '.'" />
+                  <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+                  <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+                  </br>
+                  </form>
+    </main>
+    <footer id="footer">
+        <p>"Your triumph can't be had without the struggle". Wilma Rudolph</p>
+    </footer>
+    </body>
+</html>        
