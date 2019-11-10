@@ -29,13 +29,13 @@
             </p>
         </div>
             <div id='calc-contain'>
-                <form name="calculator">              
-                <input type="text" name="answer" />
+                <form id="calc-form" name="calculator">              
+                <input id="display" type="text" name="answer" />
                   <br>
                   
                   <input type="button" value=" % " onclick="calculator.answer.value += '%'" />
                   <input type="button" value=" CE " onclick="calculator.answer.value += 'CE'" />
-                  <input type="button" value=" ON/C " onclick="calculator.answer.value += 'ON/C'" />
+                  <input id="onbutton" type="button" value=" ON/C " onclick="calculator.answer.value += 'ON/C'" />
                   </br>
 
                   <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />

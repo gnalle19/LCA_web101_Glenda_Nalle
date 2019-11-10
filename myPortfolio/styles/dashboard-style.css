@@ -1,5 +1,5 @@
 body {
-    display: flexbox;
+    display: grid;
 }
 
 header {
@@ -72,7 +72,20 @@ h2 {
                 
 }
 
+#calc-form {
+    display:flexbox;
+    border: 3px solid rgb(211, 156, 156);
+}
+
+#display {
+    width: 97%;
+}
+
+#onbutton {
+    width: 4.78em;
+}
 input {
+    width: 30px;
     color: darkcyan;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 45; 
