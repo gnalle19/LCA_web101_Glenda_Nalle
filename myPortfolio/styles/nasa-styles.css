@@ -1,0 +1,93 @@
+@media (max-width: 320px) {
+
+}
+
+body {
+    width: 850px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    margin: 0 auto;
+    height: 450px;
+    background-image: url(../src/Images/nasalanding.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: silver;   
+    font-family: 'Days One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+            
+section {
+    display: flex;
+    height:324px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+   
+}
+
+article {
+    width: 270px;
+    height: 374px;
+    line-height: 1.5;
+    background-color: rgb(154, 147, 196);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center
+
+}
+
+#fname {
+    width: 80%;
+    margin-bottom: 4px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #9bc7f3;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+   
+}
+    
+#lname {
+    width: 80%;
+    margin-bottom: 4px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #9bc7f3;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+#Message {
+    width: 80%;
+    margin-bottom: 4px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    background: #9bc7f3;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+
+}
+
+.btn {
+    background: mediumturquoise;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
