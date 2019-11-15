@@ -24,10 +24,9 @@ body {
   }
   
   main {
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-columns: 30% 40% 30%;
+
   }
 
   nav {
@@ -67,8 +66,8 @@ body {
   }
 
     #profile-pic {
-    width: 200px;
     height: 200px;
+    width: 200px;
     border-radius: 40%;
     margin: 15% auto;
     grid-column: 2/3;
@@ -90,7 +89,7 @@ button {
   margin: 3% auto;
   width: 100%;
   height: 15%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Bold;
+  font-family: volkorn;
   font-size: 15px;
   border-radius: 25px;
   border-color: black;
@@ -108,13 +107,5 @@ button {
 }
 
 @media screen and (min-width: 576px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 960px) {
 
 }
