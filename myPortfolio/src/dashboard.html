@@ -23,16 +23,19 @@
         </div>
         <div id="ToDo">
             <h2>ToDo</h2>
+            <p>Review Git and GitHub steps</p>
+            <p>Spend time coding 
+            <p>Pickup dry cleaning</p>
+            </p>
         </div>
-                <div id='calc-contain'>
-            <form name="calculator">
-                <input type="text" name="answer" />
+            <div id='calc-contain'>
+                <form id="calc-form" name="calculator">              
+                <input id="display" type="text" name="answer" />
                   <br>
                   
                   <input type="button" value=" % " onclick="calculator.answer.value += '%'" />
-                  <input type="button" value=" OFF " onclick="calculator.answer.value += 'OFF'" />
                   <input type="button" value=" CE " onclick="calculator.answer.value += 'CE'" />
-                  <input type="button" value=" ON/C " onclick="calculator.answer.value += 'ON/C'" />
+                  <input id="onbutton" type="button" value=" ON/C " onclick="calculator.answer.value += 'ON/C'" />
                   </br>
 
                   <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
@@ -59,7 +62,7 @@
                   <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
                   </br>
                   </form>
-    </main>
+                </main>
     <footer id="footer">
         <p>"Your triumph can't be had without the struggle". Wilma Rudolph</p>
     </footer>
