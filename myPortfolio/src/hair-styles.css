@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template-areas: 
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat()auto, 1fr);
+
+}
+
+.nav {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hours {
+    display: block
+}
