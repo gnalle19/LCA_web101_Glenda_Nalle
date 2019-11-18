@@ -17,10 +17,7 @@ main {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 25% 50% 25%;
-    grid-template-areas: 
-      "calendar . weather"
-      ". greeting .
-      "ToDo . calc-contain";
+    
 }
 
 h1 {
@@ -39,13 +36,16 @@ h2 {
 
 #calendar {
     grid-column: 1/2;
-    grid-row: 1/2 
+    grid-row: 1/2; 
     
 }
 
 #weather {
     grid-column: 3/4;
-    grid-row: 1/2;  
+    grid-row: 1/2;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 30px;
+    outline-color: rgb(12, 231, 12); 
 
 }
 
@@ -64,16 +64,16 @@ h2 {
 
 #calc-contain {
     display: grid;
-    background-color: darkmagenta;
     grid-column: 3/4;
     grid-row: 3/4;
+    background-color: transparent;
     justify-content: center;
     align-content: center;
                 
 }
 
 #calc-form {
-    display:flexbox;
+    display: flexbox;
     border: 3px solid rgb(211, 156, 156);
 }
 
@@ -91,6 +91,7 @@ input {
     font-size: 45; 
         
 }
+
 footer {
     display: grid;
     background-color: rgb(235, 235, 229);
@@ -101,22 +102,85 @@ p {
     font-family: Helvetica, sans-serif;
     font-size: 40;
     text-align: center;
-    color: lightcoral;  
-
+    color: coral;  
 }
 
-@media (min-width: 320px) {
+@media (max-width: 576px) {
+    
+    main {
+        display: grid;
+        grid-template-columns: 32.5% 35% 32.5%;
+        grid-template-rows: 30.5% 35% 34.5%;
 
-}
-
-@media (min-width: 576px) {
-
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
     }
-  }
 
+}
 
+@media (max-width: 576px) {
+
+    #ToDo {
+        display: grid;
+        justify-content: center;
+        padding-bottom: 5px;
+        height: 10px;
+    
+    }
+
+}
+
+@media (max-width: 475px) {
+    main {
+        display: grid;
+        grid-template-columns: 32.5% 35% 32.5%;
+        grid-template-rows: 30.5% 35% 34.5%;
+        display: block;
+    }
+}
+
+@media (max-width: 475px) {
+    #calc-contain {
+        display: none
+    }
+}
+
+@media (max-width: 475px) {
+    #weather {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 1em;
+
+        }
+    
+@media (max-width: 320px) {
+    main {
+        display: block;
+        grid-template-columns: 1;
+
+        }
+    
+    }
+
+@media (max-width: 320px) {
+    #weather {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+
+        }
+    }
+
+    @media (max-width: 320px) {
+
+        #ToDo {
+            display: block;
+            justify-content: space-evenly;
+            padding-bottom: 5px;
+        
+        }
+    
+    }
+@media (max-width: 320px) {
+    #calc-contain {
+        display: none;
+    }
+}
